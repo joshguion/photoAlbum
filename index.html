@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/html" id="albumTmpl">
+      <div class="album1">
+        <img src="<%= photo1 %>" alt="">
+      </div>
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>My Albums</h1>
+    </header>
+    <section class="myAlbums">
+    </section>
+
+    <section class="leftMenu">
+
+      <section class="photosView1 hidden">
+        <div class="albumButtons">
+          <button class="allAlbumButton" type="button" name="All Albums">All Albums</button>
+          <button class="albumButton1" type="button" name="Album 1">Album 1</button>
+          <button class="albumButton2" type="button" name="Album 2">Album 2</button>
+          <button class="albumButton3" type="button" name="Album 3">Album 3</button>
+          <button class="albumButton4" type="button" name="Album 4">Album 4</button>
+          <button class="albumButton5" type="button" name="Album 5">Album 5</button>
+          <button class="albumButton6" type="button" name="Album 6">Album 6</button>
+        </div>
+      </section>
+
+      <section class="photosView2 hidden">
+
+      </section>
+      <section class="photosView3 hidden">
+
+      </section>
+      <section class="photosView4 hidden">
+
+      </section>
+      <section class="photosView5 hidden">
+
+      </section>
+      <div class="photosView6 hidden">
+
+      </section>
+   </section>
+
+
+
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="photos.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
