@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('.album6').css('display', 'none');
     $('header').css('display', 'none');
     $('.albumNav').css('display', 'inline');
-    $('.photosView1').removeClass('.hidden');
+    $('.photosView1').removeClass('hidden');
 
   });
 
@@ -24,7 +24,12 @@ $('.album2').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
-  $('.photosView2').removeClass('.hidden');
+  $('.photosView2').removeClass('hidden');
+  $('.photosView1').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
 });
 
 $('.album3').click(function(event){
@@ -39,6 +44,11 @@ $('.album3').click(function(event){
   $('.albumNav').css('display', 'inline');
   $('.allalbums3').css('display', 'none');
   $('.photosView3').removeClass('.hidden');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
 });
 $('.album4').click(function(event){
   event.preventDefault();
@@ -51,6 +61,12 @@ $('.album4').click(function(event){
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
   $('.allalbums4').css('display', 'none');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').removeClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
 });
 $('.album5').click(function(event){
   event.preventDefault();
@@ -63,6 +79,12 @@ $('.album5').click(function(event){
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
   $('.allalbums5').css('display', 'none');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').removeClass('hidden');
+  $('.photosView6').addClass('hidden');
 
 });
 $('.album6').click(function(event){
@@ -76,6 +98,12 @@ $('.album6').click(function(event){
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
   $('.allalbums6').css('display', 'none');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').removeClass('hidden');
 });
 
 //page 2 click events//////////////////////////////////////////////////////////////////////
@@ -104,6 +132,13 @@ $('.albumButton1').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
+  $('.photosView2').addClass('hidden');
+  $('.photosView1').removeClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
+
 
 });
 $('.albumButton2').click(function(event){
@@ -116,10 +151,14 @@ $('.albumButton2').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
-  $('.photosView2').removeClass('.hidden');
-
-
+  $('.photosView2').removeClass('hidden');
+  $('.photosView1').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
 });
+
 $('.albumButton3').click(function(event){
   event.preventDefault();
   $('.album1').css('display', 'none');
@@ -130,6 +169,13 @@ $('.albumButton3').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
+  $('.allalbums3').css('display', 'none');
+  $('.photosView3').removeClass('hidden');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
 
 });
 $('.albumButton4').click(function(event){
@@ -142,6 +188,13 @@ $('.albumButton4').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
+  $('.allalbums4').css('display', 'none');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').removeClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').addClass('hidden');
 
 });
 $('.albumButton5').click(function(event){
@@ -154,6 +207,13 @@ $('.albumButton5').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
+  $('.allalbums5').css('display', 'none');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').removeClass('hidden');
+  $('.photosView6').addClass('hidden');
 
 });
 $('.albumButton6').click(function(event){
@@ -166,7 +226,20 @@ $('.albumButton6').click(function(event){
   $('.album6').css('display', 'none');
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
+  $('.allalbums6').css('display', 'none');
+  $('.photosView1').addClass('hidden');
+  $('.photosView2').addClass('hidden');
+  $('.photosView3').addClass('hidden');
+  $('.photosView4').addClass('hidden');
+  $('.photosView5').addClass('hidden');
+  $('.photosView6').removeClass('hidden');
+});
 
+$('a').click(function(event){
+  event.preventDefault();
+  if ($(this).href === '#album1'){
+
+  }
 });
 
 

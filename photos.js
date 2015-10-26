@@ -47,7 +47,7 @@ _.each(allPhotoAlbums, function(currElem, idx, arr){
 
 var otherAlbums = [
   { photo: "images/photo1.jpg"},
-  { photo: "images/photo2.jpg" },
+  { photo: "images/photo2.jpg"},
   { photo: "images/photo3.jpg"}
 ];
 
@@ -58,7 +58,7 @@ var photos = otherAlbums.forEach(function(el) {
 
 var otherAlbums2 = [
   { photo: "images/photo4.jpg"},
-  { photo: "images/photo5.jpg" },
+  { photo: "images/photo5.png"},
   { photo: "images/photo6.jpg"}
 ];
 
@@ -67,42 +67,45 @@ var photos2 = otherAlbums2.forEach(function(el) {
 
 });
 var otherAlbums3 = [
-  { photo: "images/photo4.jpg"},
-  { photo: "images/photo5.jpg" },
-  { photo: "images/photo6.jpg"}
+  { photo: "images/photo7.jpg"},
+  { photo: "images/photo8.jpg"},
+  { photo: "images/photo9.jpg"}
 ];
 
-var photos3 = otherAlbums2.forEach(function(el) {
+var photos3 = otherAlbums3.forEach(function(el, idx, arr) {
   $('.photosView3').append("<img src='" + el.photo + "'>");
 
 });
+
 var otherAlbums4 = [
-  { photo: "images/photo4.jpg"},
-  { photo: "images/photo5.jpg" },
-  { photo: "images/photo6.jpg"}
+  { photo: "images/photo10.jpg"},
+  { photo: "images/photo11.jpg"},
+  { photo: "images/photo12.jpg"}
 ];
 
-var photos4 = otherAlbums2.forEach(function(el) {
+var photos4 = otherAlbums4.forEach(function(el) {
   $('.photosView4').append("<img src='" + el.photo + "'>");
 
 });
+
 var otherAlbums5 = [
-  { photo: "images/photo4.jpg"},
-  { photo: "images/photo5.jpg" },
-  { photo: "images/photo6.jpg"}
+  { photo: "images/photo13.jpg"},
+  { photo: "images/photo14.jpg"},
+  { photo: "images/photo15.jpg"}
 ];
 
-var photos5 = otherAlbums2.forEach(function(el) {
+var photos5 = otherAlbums5.forEach(function(el) {
   $('.photosView5').append("<img src='" + el.photo + "'>");
 
 });
+
 var otherAlbums6 = [
-  { photo: "images/photo4.jpg"},
-  { photo: "images/photo5.jpg" },
-  { photo: "images/photo6.jpg"}
+  { photo: "images/photo16.jpg"},
+  { photo: "images/photo17.jpg"},
+  { photo: "images/photo18.jpg"}
 ];
 
-var photos6 = otherAlbums2.forEach(function(el) {
+var photos6 = otherAlbums6.forEach(function(el) {
   $('.photosView6').append("<img src='" + el.photo + "'>");
 
 });

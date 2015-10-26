@@ -17,6 +17,10 @@ header {
   }
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 img {
   max-width: 275px;
   display: inline-block;
@@ -52,9 +56,9 @@ img {
   width: 100%;
 }
 
-.photosView1 {
+.photosView1, .photosView2, .photosView3, .photosView4, .photosView5, .photosView6 {
   background-color: #C7C7C7;
-  // width: 100%;
+  width: 100%;
   height: 100%;
   button {
     display: block;
