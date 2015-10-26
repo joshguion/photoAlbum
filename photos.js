@@ -1,5 +1,6 @@
 var allPhotoAlbums = [
    {
+     name: 'cats',
     photo1: "images/photo1.jpg",
     photo2: "images/photo2.jpg",
     photo3: "images/photo3.jpg"
@@ -38,12 +39,18 @@ var albumVar = _.template($('#albumTmpl').html());
 var albumStr = '';
 
 _.each(allPhotoAlbums, function(currElem, idx, arr){
+  currElem.album = idx + 1;
+  console.log(currElem);
   albumStr += albumVar(currElem);
 
   $('.myAlbums').html(albumStr);
 
 });
-
+/////////////////////////////////////////////////
+$('.myAlbums img').on('click', function() { console.log(this);
+  globalVar = $(this).parent().parent().attr('rel');
+  otherEl = allPhotoAlbums.filter(function(el) { return el.name === globalVar }) });
+/////////////////////////////////////////////////
 
 var otherAlbums = [
   { photo: "images/photo1.jpg"},

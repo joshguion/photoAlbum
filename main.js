@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   $('.album1').click(function(event){
     event.preventDefault();
+    console.log(event.target);
     $('.album1').css('display', 'none');
     $('.album2').css('display', 'none');
     $('.album3').css('display', 'none');
@@ -11,7 +12,6 @@ $(document).ready(function(){
     $('header').css('display', 'none');
     $('.albumNav').css('display', 'inline');
     $('.photosView1').removeClass('hidden');
-
   });
 
 $('.album2').click(function(event){
@@ -43,13 +43,14 @@ $('.album3').click(function(event){
   $('header').css('display', 'none');
   $('.albumNav').css('display', 'inline');
   $('.allalbums3').css('display', 'none');
-  $('.photosView3').removeClass('.hidden');
   $('.photosView1').addClass('hidden');
   $('.photosView2').addClass('hidden');
+  $('.photosView3').removeClass('.hidden');
   $('.photosView4').addClass('hidden');
   $('.photosView5').addClass('hidden');
   $('.photosView6').addClass('hidden');
 });
+
 $('.album4').click(function(event){
   event.preventDefault();
   $('.album1').css('display', 'none');
@@ -68,6 +69,7 @@ $('.album4').click(function(event){
   $('.photosView5').addClass('hidden');
   $('.photosView6').addClass('hidden');
 });
+
 $('.album5').click(function(event){
   event.preventDefault();
   $('.album1').css('display', 'none');
@@ -85,8 +87,8 @@ $('.album5').click(function(event){
   $('.photosView4').addClass('hidden');
   $('.photosView5').removeClass('hidden');
   $('.photosView6').addClass('hidden');
-
 });
+
 $('.album6').click(function(event){
   event.preventDefault();
   $('.album1').css('display', 'none');
